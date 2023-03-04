@@ -6,7 +6,7 @@ Environment setup
 
 #. Clone the repository::
 
-    git clone git@github.com:vfcapital/repo_name.git
+    git clone git@github.com:account_name/repo_name.git
 
 #. Create a virtual environment::
 
