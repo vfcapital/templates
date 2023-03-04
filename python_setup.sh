@@ -2,12 +2,12 @@ repo_name="${PWD##*/}"
 
 mkdir -p $repo_name
 
-cp ../templates/setup.cfg ./setup.cfg
-cp ../templates/setup.py ./setup.py
-cp ../templates/.gitignore ./.gitignore
-cp ../templates/.pre-commit-config.yaml .pre-commit-config.yaml
-cp ../templates/VERSION ./$repo_name/VERSION
-cp ../templates/README.rst ./README.rst
+cp ../templates/python_templates/setup.cfg ./setup.cfg
+cp ../templates/python_templates/setup.py ./setup.py
+cp ../templates/python_templates/.gitignore ./.gitignore
+cp ../templates/python_templates/.pre-commit-config.yaml .pre-commit-config.yaml
+cp ../templates/python_templates/VERSION ./$repo_name/VERSION
+cp ../templates/python_templates/README.rst ./README.rst
 
 sed -i "" "s/repo_name/$repo_name/g" setup.cfg
 sed -i "" "s/repo_name/$repo_name/g" README.rst
